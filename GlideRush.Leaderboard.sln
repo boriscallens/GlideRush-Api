@@ -1,43 +1,46 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideRush.Leaderboard.Domain", "GlideRush.Leaderboard.Domain\GlideRush.Leaderboard.Domain.csproj", "{AA5A794F-3DF1-49CF-9DDE-D467EEC6D5B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlideRush.Leaderboard.Domain", "GlideRush.Leaderboard.Domain\GlideRush.Leaderboard.Domain.csproj", "{AA5A794F-3DF1-49CF-9DDE-D467EEC6D5B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideRush.Leaderboard.Api", "GlideRush.Leaderboard.Api\GlideRush.Leaderboard.Api.csproj", "{0B67A83D-650C-496E-9DC4-31CC4DCBA2A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlideRush.Leaderboard.Infrastructure", "GlideRush.Leaderboard.Infrastructure\GlideRush.Leaderboard.Infrastructure.csproj", "{4BEF10C8-E8F2-4237-BFA4-63C3BF474253}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideRush.Leaderboard.Infrastructure", "GlideRush.Leaderboard.Infrastructure\GlideRush.Leaderboard.Infrastructure.csproj", "{4BEF10C8-E8F2-4237-BFA4-63C3BF474253}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlideRush.Leaderboard.Persistence", "GlideRush.Leaderboard.Persistence\GlideRush.Leaderboard.Persistence.csproj", "{484F0241-64EF-42C2-9DB7-E93814C55C29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideRush.Leaderboard.Persistence", "GlideRush.Leaderboard.Persistence\GlideRush.Leaderboard.Persistence.csproj", "{484F0241-64EF-42C2-9DB7-E93814C55C29}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideRush.Leaderboard.Service", "GlideRush.Leaderboard.Service\GlideRush.Leaderboard.Service.csproj", "{8D55BE75-0A93-4FA5-B5A4-C48E28000F73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlideRush.Leaderboard.Service", "GlideRush.Leaderboard.Service\GlideRush.Leaderboard.Service.csproj", "{8D55BE75-0A93-4FA5-B5A4-C48E28000F73}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{FDF308B1-816B-4F8E-8F9B-EF842C5476CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideRush.Leaderboard.Api.Test", "GlideRush.Leaderboard.Api.Test\GlideRush.Leaderboard.Api.Test.csproj", "{3674E674-C6C0-4275-AFCD-EBC8737102CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlideRush.Leaderboard.Api.Test", "GlideRush.Leaderboard.Api.Test\GlideRush.Leaderboard.Api.Test.csproj", "{3674E674-C6C0-4275-AFCD-EBC8737102CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideRush.Leaderboard.Infrastructure.Test", "GlideRush.Leaderboard.Infrastructure.Test\GlideRush.Leaderboard.Infrastructure.Test.csproj", "{7211CCB3-CC78-4649-A850-82AB6BECBB1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlideRush.Leaderboard.Infrastructure.Test", "GlideRush.Leaderboard.Infrastructure.Test\GlideRush.Leaderboard.Infrastructure.Test.csproj", "{7211CCB3-CC78-4649-A850-82AB6BECBB1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlideRush.Leaderboard.Persistence.Test", "GlideRush.Leaderboard.Persistence.Test\GlideRush.Leaderboard.Persistence.Test.csproj", "{81E843C7-5228-4728-A90F-939B95E5A8C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlideRush.Leaderboard.Persistence.Test", "GlideRush.Leaderboard.Persistence.Test\GlideRush.Leaderboard.Persistence.Test.csproj", "{81E843C7-5228-4728-A90F-939B95E5A8C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlideRush.Leaderboard.Api", "GlideRush.Leaderboard.Api\GlideRush.Leaderboard.Api.csproj", "{CCED2C0A-0406-483F-8612-EB3C41F7F94E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlideRush.Leaderboard.Service.Test", "GlideRush.Leaderboard.Service.Test\GlideRush.Leaderboard.Service.Test.csproj", "{DAF2F263-2594-472E-9441-284DF26D659B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{4A0EA5FD-BEC7-42AC-9E0E-C5F4272906E3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AA5A794F-3DF1-49CF-9DDE-D467EEC6D5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AA5A794F-3DF1-49CF-9DDE-D467EEC6D5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA5A794F-3DF1-49CF-9DDE-D467EEC6D5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA5A794F-3DF1-49CF-9DDE-D467EEC6D5B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B67A83D-650C-496E-9DC4-31CC4DCBA2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B67A83D-650C-496E-9DC4-31CC4DCBA2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B67A83D-650C-496E-9DC4-31CC4DCBA2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B67A83D-650C-496E-9DC4-31CC4DCBA2A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4BEF10C8-E8F2-4237-BFA4-63C3BF474253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BEF10C8-E8F2-4237-BFA4-63C3BF474253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BEF10C8-E8F2-4237-BFA4-63C3BF474253}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -62,10 +65,25 @@ Global
 		{81E843C7-5228-4728-A90F-939B95E5A8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81E843C7-5228-4728-A90F-939B95E5A8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81E843C7-5228-4728-A90F-939B95E5A8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCED2C0A-0406-483F-8612-EB3C41F7F94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCED2C0A-0406-483F-8612-EB3C41F7F94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCED2C0A-0406-483F-8612-EB3C41F7F94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCED2C0A-0406-483F-8612-EB3C41F7F94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF2F263-2594-472E-9441-284DF26D659B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF2F263-2594-472E-9441-284DF26D659B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF2F263-2594-472E-9441-284DF26D659B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF2F263-2594-472E-9441-284DF26D659B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3674E674-C6C0-4275-AFCD-EBC8737102CE} = {FDF308B1-816B-4F8E-8F9B-EF842C5476CB}
 		{7211CCB3-CC78-4649-A850-82AB6BECBB1E} = {FDF308B1-816B-4F8E-8F9B-EF842C5476CB}
 		{81E843C7-5228-4728-A90F-939B95E5A8C8} = {FDF308B1-816B-4F8E-8F9B-EF842C5476CB}
+		{DAF2F263-2594-472E-9441-284DF26D659B} = {FDF308B1-816B-4F8E-8F9B-EF842C5476CB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B78AD79F-8171-4CEE-9A9F-6F2C54772314}
 	EndGlobalSection
 EndGlobal

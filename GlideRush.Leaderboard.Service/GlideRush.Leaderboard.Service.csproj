@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GlideRush.Leaderboard.Domain\GlideRush.Leaderboard.Domain.csproj" />
+    <ProjectReference Include="..\GlideRush.Leaderboard.Persistence\GlideRush.Leaderboard.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dto\" />
+  </ItemGroup>
+
 </Project>
