@@ -9,7 +9,7 @@ using MediatR;
 
 namespace GlideRush.Leaderboard.Service.AddEntry;
 
-public class AddEntryHandler : IRequestHandler<AddEntryCommand, AddHandlerResult>
+public class AddEntryHandler : IRequestHandler<AddEntryCommand, AddEntryResult>
 {
     private readonly LeaderboardContext _context;
     private readonly IMapper _mapper;
@@ -20,7 +20,7 @@ public class AddEntryHandler : IRequestHandler<AddEntryCommand, AddHandlerResult
         _mapper = mapper;
     }
 
-    public async Task<AddHandlerResult> Handle(AddEntryCommand request, CancellationToken cancellationToken)
+    public async Task<AddEntryResult> Handle(AddEntryCommand request, CancellationToken cancellationToken)
     {
         var board = await _context.Boards.FindAsync(new object[] { request.BoardId }, cancellationToken);
 
@@ -39,7 +39,7 @@ public class AddEntryHandler : IRequestHandler<AddEntryCommand, AddHandlerResult
 
         await _context.BoardEntries.AddAsync(entry, cancellationToken);
 
-        return new AddHandlerResult
+        return new AddEntryResult
         {
             LeaderBoardId = entry.Board.Id,
             Entry = _mapper.Map<BoardEntry, BoardEntryDto>(entry)

@@ -1,4 +1,6 @@
 using GlideRush.Leaderboard.Service.CreateLeaderboard;
+using GlideRush.Leaderboard.Service.ListLeaderboards;
+
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,5 +23,11 @@ public class LeaderboardController : ControllerBase
     public async Task<CreateLeaderboardResult> Create([FromBody]CreateLeaderboardCommand command)
     {
         return await _mediator.Send(command);
+    }
+
+    [HttpGet(Name = "List")]
+    public async Task<LeaderboardListResult> List([FromQuery]ListLeaderboardQuery query)
+    {
+        return await _mediator.Send(query);
     }
 }

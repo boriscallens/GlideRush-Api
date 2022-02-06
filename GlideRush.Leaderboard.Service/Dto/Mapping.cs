@@ -8,6 +8,7 @@ public class Mapping: Profile
 {
     public Mapping()
     {
+        this.CreateMap<Board, BoardDto>();
         this.CreateMap<BoardEntry, BoardEntryDto>();
     }
 }
