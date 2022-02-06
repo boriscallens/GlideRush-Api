@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.ConfigureMediator();
 builder.Services.ConfigureMapper();
-builder.Services.ConfigureInMemoryPersistence();
+builder.Services.ConfigurePersistence();
 
 var app = builder.Build();
 

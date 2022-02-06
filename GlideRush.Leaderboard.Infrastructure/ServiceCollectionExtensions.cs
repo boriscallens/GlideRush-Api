@@ -8,6 +8,7 @@ using MediatR;
 using Microsoft.Azure.Services.AppAuthentication;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 
@@ -57,6 +58,11 @@ namespace GlideRush.Leaderboard.Infrastructure
             {
                 services.AddSingleton(SqlLiteInMemoryFactory<LeaderboardContext>);
             }
+        }
+        public static void AddConfiguration(this IServiceCollection services, string appSettingsFilename = "appsettings.json")
+        {
+            var config = new ConfigurationBuilder().AddJsonFile(appSettingsFilename).Build();
+            services.AddSingleton<IConfiguration>(config);
         }
     }
 }

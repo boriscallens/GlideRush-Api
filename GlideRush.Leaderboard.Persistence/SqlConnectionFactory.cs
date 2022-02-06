@@ -7,7 +7,7 @@ namespace GlideRush.Leaderboard.Persistence
 {
     public interface ISqlConnectionFactory
     {
-        SqlConnection CreateConnection(string connectionStringName = "Selection");
+        SqlConnection CreateConnection(string connectionStringName = "GlideRush");
     }
 
     public class SqlConnectionFactory : ISqlConnectionFactory
@@ -24,7 +24,7 @@ namespace GlideRush.Leaderboard.Persistence
             _logger = logger;
         }
 
-        public SqlConnection CreateConnection(string connectionStringName = "Selection")
+        public SqlConnection CreateConnection(string connectionStringName = "GlideRush")
         {
             var connectionString = _configuration.GetConnectionString(connectionStringName);
             var connectionInfo = new SqlConnectionStringBuilder(connectionString);
