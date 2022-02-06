@@ -1,13 +1,15 @@
 ﻿using AutoMapper;
+
 using GlideRush.Leaderboard.Domain;
 using GlideRush.Leaderboard.Domain.Exceptions;
 using GlideRush.Leaderboard.Persistence;
 using GlideRush.Leaderboard.Service.Dto;
+
 using MediatR;
 
 namespace GlideRush.Leaderboard.Service.AddEntry;
 
-public class AddEntryHandler : IRequestHandler<AddHandlerCommand, AddHandlerResult>
+public class AddEntryHandler : IRequestHandler<AddEntryCommand, AddHandlerResult>
 {
     private readonly LeaderboardContext _context;
     private readonly IMapper _mapper;
@@ -18,7 +20,7 @@ public class AddEntryHandler : IRequestHandler<AddHandlerCommand, AddHandlerResu
         _mapper = mapper;
     }
 
-    public async Task<AddHandlerResult> Handle(AddHandlerCommand request, CancellationToken cancellationToken)
+    public async Task<AddHandlerResult> Handle(AddEntryCommand request, CancellationToken cancellationToken)
     {
         var board = await _context.Boards.FindAsync(new object[] { request.BoardId }, cancellationToken);
 
@@ -35,9 +37,12 @@ public class AddEntryHandler : IRequestHandler<AddHandlerCommand, AddHandlerResu
             Time = request.Time
         };
 
-        return await Task.FromResult(new AddHandlerResult
+        await _context.BoardEntries.AddAsync(entry, cancellationToken);
+
+        return new AddHandlerResult
         {
+            LeaderBoardId = entry.Board.Id,
             Entry = _mapper.Map<BoardEntry, BoardEntryDto>(entry)
-        });
+        };
     }
 }

@@ -9,6 +9,7 @@ public class LeaderboardContext : DbContext
     private readonly ISqlConnectionFactory _connectionFactory;
 
     public DbSet<Board> Boards { get; set; }
+    public DbSet<BoardEntry> BoardEntries { get; set; }
 
     public LeaderboardContext(DbContextOptions options, ISqlConnectionFactory connectionFactory) : base(options)
     {

@@ -12,6 +12,7 @@ namespace GlideRush.Leaderboard.Service.Test
         {
             var serviceCollection = new ServiceCollection();
             serviceCollection.ConfigureMapper();
+            serviceCollection.ConfigureInMemoryPersistence();
            _provider = serviceCollection.BuildServiceProvider();
         }
 
