@@ -1,6 +1,9 @@
 # GlideRush-Api
 
-> Suggestions for backend api for leaderboards in Glide Rush
+> Show don't tell solution I created for @joonjoonjoon
+> Using this opportunity to build a template script for building new api solutions faster
+> Gathering an outsider's feedback on solution design is always usefull
+
 <hr>
 
 A **leaderboard** contains a set of record atempts by various players.
